@@ -1,0 +1,8 @@
+<routes>
+    <route id="file-mover">
+      <from uri= "file:///tmp/camel" />
+        <log messege = "Headers:${headers}" />
+        <log messege = "Body ${body}" />
+        <to uri="file:///tmp/camel/processed"/>
+    </route>
+</routes>
